@@ -2,6 +2,7 @@ package org.example.sandbox.inheritance;
 
 public class Robin extends Bird {
 
+
     public Robin(){
         count++;
     }
@@ -18,5 +19,7 @@ public class Robin extends Bird {
     @Override
     public void tweet() {
         System.out.println("I am tweeting like a robin");
+
+
     }
 }

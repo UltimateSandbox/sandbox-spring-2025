@@ -2,7 +2,7 @@ package org.example.sandbox.inheritance;
 
 public class Bird extends Aves {
 
-    public Bird(){
+    public Bird() {
         super();
         count++;
     }
@@ -15,10 +15,12 @@ public class Bird extends Aves {
     @Override
     public void eat(String food) {
         System.out.println("I am eating");
+
     }
 
     @Override
     public void tweet() {
         super.tweet();
+
     }
 }

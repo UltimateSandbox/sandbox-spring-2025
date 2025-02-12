@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Algorithm {
+
     public static Map<Integer, Integer> map = new HashMap<>();
 
     public static int fibonacci(int n) {
@@ -25,17 +26,11 @@ public class Algorithm {
         return memo(n - 1) + memo(n - 2);
     }
     private static int memo(int n) {
-        if (n <= 1) {
-            return n;
-        }
 
-        if (map.containsKey(n)) {
-            return map.get(n);
-        }
-        int result = memo(n - 1) + memo(n - 2);
-        map.put(n, result);
 
-        return result;
+    public static Map<Integer, Integer> map = new HashMap<>();
+
+    
     }
     public static void main(String[] args) {//psvm
         //System.out.println(fibonacci(10)); // 55
@@ -53,3 +48,4 @@ public class Algorithm {
     -use comments sparingly, especially if code is getting changed in the future (in real life)
     -camelCase, whitespace, and indentation are important for this class
 */
+
